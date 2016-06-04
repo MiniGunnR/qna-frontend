@@ -30,10 +30,15 @@
             <li><a href="#"><i class="fa fa-search"></i></a></li>
             <li><a href="#"><i class="fa fa-bell"></i></a></li>
 
-            <li style="float: right;"><a href="#"><i class="fa fa-power-off"></i></a></li>
-            <li style="float: right;"><a href="#"><i class="fa fa-question"></i></a></li>
-            <li style="float: right;"><a href="#"><i class="fa fa-wrench"></i></a></li>
-            <li style="float: right;"><a href="#"><i class="fa fa-user"></i></a></li>
+            <li style="float: right;" class="dropdown">
+                <a href="#" onclick="myFunction()"><i class="fa fa-user dropbtn"></i></a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="#">Profile</a>
+                    <a href="#">Settings</a>
+                    <a href="#">Help</a>
+                    <a href="#">Logout</a>
+                </div>
+            </li>
         </ul>
     </nav>
     <!-- Top Menu End -->
@@ -70,6 +75,8 @@
                         <a class="gray" href="#"><i class="fa fa-bookmark-o"></i></a>
                         &nbsp; &bull; &nbsp;
                         <a class="gray" href="#"><i class="fa fa-comment-o"></i></a>
+                        &nbsp; &bull; &nbsp;
+                        <a class="gray" href="#"><i class="fa fa-font"></i></a>
                     </div>
                 </div>
                 <i class="fa fa-close close"></i>
@@ -78,7 +85,7 @@
                     <h5>Post a comment</h5>
 
                     <div class="comment-create">
-                        <input type="text" class="form-control" />
+                        <input type="text" class="form-control" autofocus />
                     </div>
                 </div>
             </div>
@@ -109,7 +116,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -118,7 +125,26 @@
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip();
-        })
+        });
+
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function(event) {
+          if (!event.target.matches('.dropbtn')) {
+
+            var dropdowns = document.getElementsByClassName("dropdown-content");
+            var i;
+            for (i = 0; i < dropdowns.length; i++) {
+              var openDropdown = dropdowns[i];
+              if (openDropdown.classList.contains('show')) {
+                openDropdown.classList.remove('show');
+              }
+            }
+          }
+        }
     </script>
     </body>
 </html>

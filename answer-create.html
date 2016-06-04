@@ -31,7 +31,7 @@
             <li><a href="#"><i class="fa fa-bell"></i></a></li>
 
             <li style="float: right;" class="dropdown">
-                <a href="#" onclick="myFunction()"><i class="fa fa-user dropbtn"></i></a>
+                <a onclick="myFunction()"><i class="fa fa-user dropbtn"></i></a>
                 <div id="myDropdown" class="dropdown-content">
                     <a href="#">Profile</a>
                     <a href="#">Settings</a>
@@ -81,86 +81,12 @@
                 </div>
                 <i class="fa fa-close close"></i>
 
-                <div class="stream-comments-box">
-                    <h5>Comments</h5>
+                <div class="stream-answer-box">
+                    <p class="alert" style="padding-bottom: 0px;">You are writing as <b>Mohaiminul Hasan</b> <button class="btn btn-sm btn-default">Go Anonymous</button></p>
 
-                    <div class="comment-box" style="position: relative;">
-                        <div class="commenter-photo" style="">
-                            <img src="http://res.cloudinary.com/demo/image/upload/w_200,h_200,c_thumb,g_face,r_max/face_left.png"/>
-                        </div>
-                        <div class="commenter-text">
-                            <p><a href="#">Farhana Islam</a> </p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                        </div>
-                        <i class="fa fa-ellipsis-h close-comment"></i>
-                    </div>
-
-                    <div class="comment-box" style="position: relative;">
-                        <div class="commenter-photo" style="">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/User-nohat-photo.jpg"/>
-                        </div>
-                        <div class="commenter-text">
-                            <p><a href="#">Mohaiminul Hasan</a> </p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                        </div>
-                        <i class="fa fa-ellipsis-h close-comment"></i>
-                    </div>
-                </div>
-            </div>
-
-            <div class="box">
-                <a class="stream-question" href="#">How big is the moon?</a> <br/>
-                <hr style="margin-bottom: 10px;"/>
-
-                <div class="stream-post-options">
-                    <div style="margin-bottom: 0px;" class="stream-left-option gray">
-                        <a class="gray" href="#">May 21, 2016</a>
-                         &nbsp; &bull; &nbsp;
-                        <a class="gray" href="#">2 comments</a>
-                        &nbsp; &bull; &nbsp;
-                        <a class="gray" href="#">1 answer</a>
-                    </div>
-                    <div class="stream-right-option gray text-right">
-                        <a class="gray" href="#" data-toggle="tooltip" data-placement="left" title="27"><i class="fa fa-heart-o"></i></a>
-                        &nbsp; &bull; &nbsp;
-                        <a class="gray" href="#"><i class="fa fa-bookmark-o"></i></a>
-                        &nbsp; &bull; &nbsp;
-                        <a class="gray" href="#"><i class="fa fa-comment-o"></i></a>
-                    </div>
-                </div>
-                <i class="fa fa-close close"></i>
-
-                <div class="stream-comments-box">
-                    <h5>Comments</h5>
-
-                    <div class="comment-box" style="position: relative;">
-                        <div class="commenter-photo">
-                            <img src="http://res.cloudinary.com/demo/image/upload/w_200,h_200,c_thumb,g_face,r_max/face_left.png"/>
-                        </div>
-                        <div class="commenter-text">
-                            <p><a href="#">Farhana Islam</a> </p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                        </div>
-                        <i class="fa fa-ellipsis-h close-comment"></i>
-                    </div>
-
-                    <div class="comment-box" style="position: relative;">
-                        <div class="commenter-photo">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/User-nohat-photo.jpg"/>
-                        </div>
-                        <div class="commenter-text">
-                            <p><a href="#">Mohaiminul Hasan</a> </p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                            <p>Test comment.</p>
-                        </div>
-                        <i class="fa fa-ellipsis-h close-comment"></i>
+                    <div class="answer-create">
+                        <textarea type="text" class="form-control" rows="10" placeholder="Write your answer" autofocus></textarea> <br/>
+                        <input type="submit" value="Post" class="btn btn-primary" />
                     </div>
                 </div>
             </div>
